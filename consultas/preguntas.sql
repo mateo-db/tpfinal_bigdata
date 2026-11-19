@@ -32,7 +32,7 @@ SELECT
     COUNT(id_transaccion) as tot_transaccion
 FROM tabla_final
 WHERE fecha_hora BETWEEN
-    TIMESTAMP '2025-01-01 00:00:00'
-    AND TIMESTAMP '2025-06-30 23:59:59'
+    TIMESTAMP '2024-01-01 00:00:00'
+    AND TIMESTAMP '2024-06-30 23:59:59'
 GROUP BY mes
 ORDER BY mes ASC;

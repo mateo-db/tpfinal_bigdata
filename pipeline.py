@@ -5,7 +5,7 @@ from pathlib import Path
 # RUTAS
 BASE_DIR = Path(__file__).resolve().parent
 SQL_DIR = BASE_DIR / "consultas"
-DATA_DIR = BASE_DIR / "consultas"
+DATA_DIR = BASE_DIR / "datos"
 DB_PATH = BASE_DIR / "pipeline.duckdb"
 
 
