@@ -102,7 +102,11 @@ def question():
 
     try:
         print("\n###### PREGUNTAS SOBRE TABLA FINAL ######")
-        con.execute(read_sql(filename="preguntas.sql"))
+        consultas = read_sql(filename="preguntas.sql").split(";")
+        for consulta in consultas:
+            if consulta.strip():
+                print("\n" + consulta.strip().splitlines()[0])
+                print(con.sql(consulta))
 
     except Exception as e:
         print("Ocurrió un error al ejecutar las consultas:", e)
